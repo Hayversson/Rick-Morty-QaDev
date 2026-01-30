@@ -26,8 +26,9 @@ function renderCharacters(characters) {
       <p>Estado: ${character.status}</p>
       <p>Especie: ${character.species}</p>
       <p>Puntaje: <span id="score-${character.id}">${score}</span></p>
-      <button onclick="vote(${character.id}, 1)">Like</button>
-      <button onclick="vote(${character.id}, -1)">Dislike</button>
+      <button onclick="vote(${character.id}, 1)">👍 Like</button>
+      <button onclick="vote(${character.id}, -1)">👎 Dislike</button>
+
     `;
 
     container.appendChild(card);
